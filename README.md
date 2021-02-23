@@ -9,6 +9,4 @@ Used JavaScript, CSS, HTML, and the JS framework - React
 
 ### Created by using "Create React"
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-#### Project includes elements from React, including react-bootstrap and react-spring
+To run it, just do "npm run start" to start hosting on your local server!

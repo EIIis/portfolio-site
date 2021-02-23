@@ -8,7 +8,7 @@ import './App.css';
 import Footer from './components/Footer';
 import Homepage from './pages/Homepage';
 import Contact from './pages/Contact';
-import About from './pages/About';
+
 
 
 class App extends React.Component {
@@ -19,16 +19,12 @@ class App extends React.Component {
       title: 'Ellis Alcantara',
       headerLinks: [
         {title: 'Home', path: '/'},
-        {title: 'About', path: '/about'},
         {title: 'Contact', path: '/contact'}
       ],
       home:{
         title: 'Ellis',
         subtitle: 'Ellis',
         text: 'Ellis'
-      },
-      about:{
-        title: 'This is a test',
       },
       contact:{
         title: 'This is a test',
@@ -46,7 +42,6 @@ class App extends React.Component {
           <Navbar.Collapse id = "navbar-toggle">
             <Nav className = "ml-auto">
               <Link className = "nav-link" to = "/">Home</Link>
-              <Link className = "nav-link" to = "/about">About</Link>
               <Link className = "nav-link" to = "/contact">Contact</Link>
 
             </Nav>
@@ -54,7 +49,6 @@ class App extends React.Component {
         </Navbar>
 
         <Route path = "/" exact render = {() => <Homepage title = {this.state.home.title} subtitle = {this.state.home.subtitle} text = {this.state.home.text} />} />
-        <Route path = "/about" render = {() => <About title = {this.state.about.title}/>}  />
         <Route path = "/contact" render = {() => <Contact title = {this.state.contact.title}/>}  />
         <Footer />
 
