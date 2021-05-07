@@ -1,22 +1,42 @@
-import React from 'react';
-import test from '../assets/test.png' //Change this when you have more projects
-import Card from '../components/Card'
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
+import React from "react";
+import wavImage from "../assets/wav.png" // Change/Add more when you have more projects
+import twitterBot from "../assets/twitter-bot.png"
+import Card from "../components/Card"
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
 
 class Carousel extends React.Component{
     constructor(props){
         super(props);
         this.state = {
             items: [
-            {
+            { // Add another bracket, while adding +1 to the latest id to add another project
                 id: 0,
-                title: 'test',
-                subtitle: 'test as well',
-                imgSrc: test,
-                link: 'https://github.com/EIIis/portfolio-site',
+                title: "Sentiment Twitter Analysis ",
+                subtitle: "Analyzes tweets to determine sentiment",
+                imgSrc: twitterBot,
+                link: "https://github.com/EIIis/sentiment-analysis",
                 selected: false
+            },
+            { 
+                id: 1,
+                title: "Audio 2 Text",
+                subtitle: "Uses a .wav file and returns a transcript",
+                imgSrc: wavImage,
+                link: "https://github.com/EIIis/audio-recog",
+                selected: false
+                
+            },
+            {
+                id: 2,
+                title: "Twitter Reply Bot",
+                subtitle: "A Twitter bot which replies to users",
+                imgSrc: twitterBot,
+                link: "https://github.com/EIIis/TwitterBot",
+                selected: false
+                
             }
+
         ]
         }
     }

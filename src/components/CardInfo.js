@@ -1,5 +1,5 @@
-import React from 'react';
-import { useSpring , animated } from 'react-spring';
+import React from "react";
+import { useSpring , animated } from "react-spring";
 
 function CardInfo(props){
 
@@ -7,9 +7,9 @@ function CardInfo(props){
 
     return(
         <animated.div className="e-card-info" style={style}>
-            <p className="e-card-title">{props.title}</p>
-            <p className="e-card-sub-title">{props.subtitle}</p>
-            <a href = {props.link} target= "_blank" rel="noopener noreferrer">View</a>
+            <p className = "e-card-title">{props.title}</p>
+            <p className = "e-card-sub-title">{props.subtitle}</p>
+            <a href = {props.link} target = "_blank" rel="noopener noreferrer">View</a>
         </animated.div>
     );
 }

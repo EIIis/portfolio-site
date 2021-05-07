@@ -1,6 +1,6 @@
-import React from 'react';
-import  BigHome from '../components/BigHome';
-import Carousel from '../components/Carousel';
+import React from "react";
+import BigHome from "../components/BigHome";
+import Carousel from "../components/Carousel";
 
 function Homepage(props){
 

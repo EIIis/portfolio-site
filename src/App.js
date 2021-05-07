@@ -1,14 +1,12 @@
-import React from 'react';
-import {BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import Container from 'react-bootstrap/Container';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
-import './App.css';
-
-import Footer from './components/Footer';
-import Homepage from './pages/Homepage';
-import Contact from './pages/Contact';
-
+import React from "react";
+import {BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Container from "react-bootstrap/Container";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
+import "./App.css";
+import Footer from "./components/Footer";
+import Homepage from "./pages/Homepage";
+import Contact from "./pages/Contact";
 
 
 class App extends React.Component {
@@ -16,34 +14,36 @@ class App extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      title: 'Ellis Alcantara',
       headerLinks: [
-        {title: 'Home', path: '/'},
-        {title: 'Contact', path: '/contact'}
+        {title: "Home", path: "/"},
+        {title: "Contact", path: "/contact"}
       ],
       home:{
-        title: 'Ellis',
-        subtitle: 'Ellis',
-        text: 'Ellis'
+        title: "Hello!",
+        subtitle: "I\'m Ellis Alcantara",
+        text: "Click an image below to read a description my project along with a link to my Github containing the source code."
       },
       contact:{
-        title: 'This is a test',
+        title: "Let\'s connect!",
       }
     }
   }
+  /*
+  Nav.Brand changes the top left
+  Link className lets you add more pages
+  */
   render() {
     return (
     <Router>
       <Container className = "p-0" fluid = {true}>
 
         <Navbar className = "border-bottom" bg ="transparent" expand = "lg">
-          <Navbar.Brand> Ellis Alcantara</Navbar.Brand>
+          <Navbar.Brand></Navbar.Brand> 
           <Navbar.Toggle className = "border-0" aria-controls = "navbar-toggle" />
           <Navbar.Collapse id = "navbar-toggle">
             <Nav className = "ml-auto">
               <Link className = "nav-link" to = "/">Home</Link>
               <Link className = "nav-link" to = "/contact">Contact</Link>
-
             </Nav>
           </Navbar.Collapse>
         </Navbar>
