@@ -20,11 +20,11 @@ class App extends React.Component {
       ],
       home:{
         title: "Hello!",
-        subtitle: "I\'m Ellis Alcantara",
+        subtitle: "I'm Ellis Alcantara",
         text: "Click an image below to read a description my project along with a link to my Github containing the source code."
       },
       contact:{
-        title: "Let\'s connect!",
+        title: "Let's connect!",
       }
     }
   }
