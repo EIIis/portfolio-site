@@ -6,7 +6,8 @@ import Nav from "react-bootstrap/Nav";
 import "./App.css";
 import Footer from "./components/Footer";
 import Homepage from "./pages/Homepage";
-import Contact from "./pages/Contact";
+//import Contact from "./pages/Contact";
+import About from "./pages/About";
 
 
 class App extends React.Component {
@@ -16,16 +17,21 @@ class App extends React.Component {
     this.state = {
       headerLinks: [
         {title: "Home", path: "/"},
-        {title: "Contact", path: "/contact"}
+        {title: 'About', path: '/about' },
+        //{title: "Contact", path: "/contact"}
       ],
       home:{
         title: "Hello!",
         subtitle: "I'm Ellis Alcantara",
         text: "Click an image below to read a description my project along with a link to my Github containing the source code."
       },
+      about: {
+        title: "About Me",
+      } /*  ,
       contact:{
         title: "Let's connect!",
       }
+      */
     }
   }
   /*
@@ -43,13 +49,15 @@ class App extends React.Component {
           <Navbar.Collapse id = "navbar-toggle">
             <Nav className = "ml-auto">
               <Link className = "nav-link" to = "/">Home</Link>
-              <Link className = "nav-link" to = "/contact">Contact</Link>
+              <Link className="nav-link" to="/about">About</Link>
+              {/* <Link className = "nav-link" to = "/contact">Contact</Link> */}
             </Nav>
           </Navbar.Collapse>
         </Navbar>
 
         <Route path = "/" exact render = {() => <Homepage title = {this.state.home.title} subtitle = {this.state.home.subtitle} text = {this.state.home.text} />} />
-        <Route path = "/contact" render = {() => <Contact title = {this.state.contact.title}/>}  />
+        <Route path="/about" render={() => <About title={this.state.about.title} />} />
+        {/* <Route path = "/contact" render = {() => <Contact title = {this.state.contact.title}/>}  /> */}
         <Footer />
 
       </Container>
