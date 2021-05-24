@@ -8,7 +8,7 @@ Tools that aided the development in the this project include React.js, JavaScrip
   
 ## Deployment
   
-In the future, the site will be deployed and live at [ellisalcantara.tech](www.ellisalcantara.tech), but in the meantime if you want to run the project, you can clone the repository and run it by going to the terminal and doing ***npm run start***.  
+The site is live at [ellisalcantara.com](www.ellisalcantara.com)!  
   
 ## Documentation
   
