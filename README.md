@@ -9,6 +9,7 @@ Tools that aided the development in the this project include React.js, JavaScrip
 ## Deployment
   
 The site is live at [ellisalcantara.com](www.ellisalcantara.com)!  
+One thing, the code is most likely behind the actual deployment just because...idk why but it is.  
   
 ## Documentation
   
