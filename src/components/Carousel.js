@@ -1,9 +1,12 @@
 import React from "react";
-import wavImage from "../assets/wav.png" // Change/Add more when you have more projects
-import twitterBot from "../assets/twitter-bot.png"
 import Card from "../components/Card"
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
+
+import wavImage from "../assets/wav.svg" // Change/Add more when you have more projects
+import twitter from "../assets/tweet.svg"
+import caviarCoin from "../assets/logo.svg"
+import portHome from "../assets/homepage.svg"
 
 class Carousel extends React.Component{
     constructor(props){
@@ -12,32 +15,58 @@ class Carousel extends React.Component{
             items: [
             { // Add another bracket, while adding +1 to the latest id to add another project
                 id: 0,
-                title: "Sentiment Twitter Analysis ",
-                subtitle: "Analyzes tweets to determine sentiment",
-                imgSrc: twitterBot,
-                link: "https://github.com/EIIis/sentiment-analysis",
+                title: "Blog Site",
+                subtitle: "A Twitter bot which replies to users",
+                imgSrc: twitter,
+                link: "http://github.com/EIIis/blog-site",
+                selected: false
+            },
+            {
+                id: 1,
+                title: "Algorithm Visualization Site",
+                subtitle: "A Twitter bot which replies to users",
+                subtitle2: "SHESSH",
+                imgSrc: twitter,
+                link: "http://github.com/EIIis/algo-visualization",
                 selected: false
             },
             { 
-                id: 1,
+                id: 2,
+                title: "Portfoilio Site",
+                subtitle: "Portfolio site (site you're on) created with",
+                subtitle2: "React and JavaScript to display myself!",
+                imgSrc: portHome,
+                link: "http://github.com/EIIis/portfolio-site",
+                selected: false
+            },
+            {
+                id: 3,
+                title: "Sentiment Twitter Analysis ",
+                subtitle: "Analyzes a given user's tweers in order",
+                subtitle2: "to determine the sentimental value.",
+                imgSrc: twitter,
+                link: "http://github.com/EIIis/sentiment-analysis",
+                selected: false
+            },
+            { 
+                id: 4,
                 title: "Audio 2 Text",
                 subtitle: "Uses a .wav file and returns a transcript",
                 imgSrc: wavImage,
-                link: "https://github.com/EIIis/audio-recog",
+                link: "http://github.com/EIIis/audio-recog",
                 selected: false
                 
             },
-            {
-                id: 2,
-                title: "Twitter Reply Bot",
-                subtitle: "A Twitter bot which replies to users",
-                imgSrc: twitterBot,
-                link: "https://github.com/EIIis/TwitterBot",
-                selected: false
-                
+            { 
+                id: 5,
+                title: "CaviarCoin",
+                subtitle: "Worked with a team to developed the",
+                subtitle2: "front-end of a website for 'Cavair Coin'",
+                imgSrc: caviarCoin,
+                link: "No live-site/Private Repo! Sorry :(",
+                selected: false  
             }
-
-        ]
+        ] 
         }
     }
 

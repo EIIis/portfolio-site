@@ -23,7 +23,7 @@ class App extends React.Component {
       home:{
         title: "Hello!",
         subtitle: "I'm Ellis Alcantara",
-        text: "Click an image below to read a description my project along with a link to my Github containing the source code."
+        text: "Welcome to my portfolio! Click a card for more information about my projects or if you want to know more about me, head over to the 'About' section!"
       },
       about: {
         title: "About Me",
@@ -44,7 +44,7 @@ class App extends React.Component {
       <Container className = "p-0" fluid = {true}>
 
         <Navbar className = "border-bottom" bg ="transparent" expand = "lg">
-          <Navbar.Brand></Navbar.Brand> 
+          {/* <Navbar.Brand></Navbar.Brand> */}
           <Navbar.Toggle className = "border-0" aria-controls = "navbar-toggle" />
           <Navbar.Collapse id = "navbar-toggle">
             <Nav className = "ml-auto">

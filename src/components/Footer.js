@@ -12,7 +12,7 @@ function Footer(){
                         {/* This line deals with text in the bottom left */}
                     </Col>
                     <Col className = "p-0 d-flex justify-content-end" md = {3}>
-                        Made with love by Ellis {/* This line deals with text in the bottom right */}
+                        Created by Ellis 🤓{/* This line deals with text in the bottom right */}
                     </Col>
                 </Row>
             </Container>
