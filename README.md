@@ -4,11 +4,11 @@ The main componets of the site are up and running. While there is an issue with 
 
 ## Development Tools
   
-Tools that aided the development in the this project include React.js, JavaScript, SendGrid, HTML/CSS, BootStrap, Express.js, and a few other technologies 
+Tools that aided the development in the this project include React.js, JavaScript, HTML/CSS, BootStrap, and a few other technologies 
   
 ## Deployment
   
-In the future, the site will be deployed and live at [ellisalcantara.tech](www.ellisalcantara.tech), but in the meantime if you want to run the project, you can clone the repository and run it by going to the terminal and doing ***npm run start***.  
+The site is live at [ellisalcantara.com](www.ellisalcantara.com)!  
   
 ## Documentation
   
